@@ -1,0 +1,13 @@
+<div class="login">
+  <form #myForm="ngForm">
+    <p>username: </p>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="username" name="username" [(ngModel)]="myForm.username">
+    </mat-form-field><br>
+    <p>password: </p>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="password" type="password" name="password" [(ngModel)]="myForm.password">
+    </mat-form-field><br>
+  </form>
+  <button mat-raised-button color="primary"  (click)="login(myForm.value)">sign-in</button>
+</div>

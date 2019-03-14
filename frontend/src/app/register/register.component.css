@@ -1,0 +1,8 @@
+.register{
+    max-width: 600px;
+    min-width: 350px;
+    margin: auto;
+}
+.example-full-width {
+    width: 100%;
+  }

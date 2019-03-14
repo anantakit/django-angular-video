@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span><button mat-raised-button color="warn" type="button" routerLink="/login" type="button" *ngIf="!isLogin()">เข้าสู่ระบบ</button>&nbsp;</span>
+        <span><button mat-raised-button color="warn" type="button" routerLink="/register" type="button" *ngIf="!isLogin()">สมัครสมาชิก</button>&nbsp;</span>
+        <span><button mat-raised-button color="warn" type="button" routerLink="/add-movie" type="button" *ngIf="isLogin()">เพิ่ม video</button>&nbsp;</span>
+        <span><button mat-raised-button color="warn" type="button" routerLink="/movie-list" type="button" *ngIf="isLogin()">รายชื่อ video</button>&nbsp;</span>
+        <span><button mat-raised-button color="warn" type="button" type="button" (click)="logout()" *ngIf="isLogin()">ออกจากระบบ</button>&nbsp;</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<div class="add-movie">
+  <form #myForm="ngForm">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="ชื่อวีดีโอ" name="name" [(ngModel)]="myForm.name">
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="คำอธิบาย" name="detail" rows="10" [(ngModel)]="myForm.detail"></textarea>
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="url ของ วิดีโอ" name="VideoUrl" [(ngModel)]="myForm.VideoUrl">
+    </mat-form-field><br>
+  </form>
+  <button mat-raised-button color="primary"  (click)="save(myForm.value)">SAVE</button>
+</div>
